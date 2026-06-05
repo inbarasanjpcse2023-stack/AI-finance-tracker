@@ -54,30 +54,4 @@ Final-Year-Project/
 
 ---
 
-## ⚙️ Setup Instructions
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/sugapriya-k/Final-Year-Project.git
-   cd Final-Year-Project
-2. **Create Virtual Environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-3. **Install Requirements**
-   ```bash
-   pip install -r requirements.txt
-   
-4. **Run Redis Server**
-    ```bash
-        redis-server
-
-5. **Start Celery Worker**
-    ```bash
-    celery -A finance_tracker worker --loglevel=info
-
-6. **Run Django Server**
-    ```bash
-    python manage.py migrate
-    python manage.py runserver
